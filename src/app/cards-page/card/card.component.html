@@ -1,0 +1,21 @@
+<div class="row width100">
+   <div *ngFor="let res of (this.restaurantes$ | async)" class="col-4">
+      <!--USAMOS PIPE PARA PODER LISTAR UN OBSERVABLE-->
+      <div class="card width100">
+         <img class="card-img-top" src="{{res.img}}" alt="Card image cap">
+         <div class="card-body">
+            <div class="row">
+               <div class="col-10">
+                  <h5 class="card-title">{{res.name}}</h5>
+                  <p class="card-text">El costo de envío es de ${{res.cost}}</p>
+               </div>
+               <button class="btn btn-primary button" type="button" disabled>
+                  {{res.grade}}
+               </button>
+            </div>
+            <hr>
+            <label>{{res.description}}</label>
+         </div>
+      </div>
+   </div>
+</div>

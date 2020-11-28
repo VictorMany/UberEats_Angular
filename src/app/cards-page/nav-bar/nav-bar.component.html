@@ -1,0 +1,63 @@
+<div class="fixed-top position-fixed">
+   <nav class="navbar navbar-light bg-white row" style="height: 6rem;">
+      <div class=" col-1 d-flex justify-content-end">
+         <button class="button-Menu">
+            <span (click)="saludo()" class="navbar-toggler-icon"></span>
+         </button>
+      </div>
+      <div class="col-11">
+         <div class="row">
+            <div class="col"> <img class="logo"
+                  src="https://logodownload.org/wp-content/uploads/2019/05/uber-eats-logo.png" />
+            </div>
+
+            <div class="col-2 mt">
+               <button class="button-IniciSarSesion">
+                  <h5>Inicia Sesión</h5>
+               </button>
+            </div>
+         </div>
+      </div>
+   </nav>
+</div>
+
+
+<div class="row mx-auto background">
+   <img class="position-relative imgIzq"
+      src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/fcc8d7d13a6d4cc18e55898afee5a4fb.svg" />
+   <img class="position-absolute imgDer"
+      src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/675cf3a8563174d59686f84689652408.svg " />
+</div>
+
+<div class="position-absolute main-Anucement ">
+   <h1 class="mx-auto anucement">Tu comida
+      favorita, a la velocidad de Uber
+   </h1>
+   <br>
+   <div class="input-group mb-3 mx-auto">
+      <div class="input-group-prepend">
+         <div class="input-group-text" style="background-color: white;">
+            <img src="../../../assets/ubicacion.svg" alt="" class="icon-location ">
+         </div>
+      </div>
+      <input placeholder="Ingesa la dirección de la entrega" type="text" class="form-control"
+         aria-label="Text input with checkbox">
+   </div>
+</div>
+<br>
+
+<div class="divMargin">
+   <a href="">Restaurantes cerca de mi> </a>
+   <a href="">Entrega de Desayuno y brunch cerca de mí</a>
+   <br>
+   <h1 class="anucement">Entrega de Desayuno y brunch cerca de mí</h1>
+   <h5 class="fontWeightNormal">
+      ¿Quieres comer Desayuno y brunch? Descubre restaurantes cerca de ti y recibe los mejores platos de Desayuno y
+      brunch a domicilio.
+   </h5>
+   <br>
+   <hr>
+   <h2 class="anucement">
+      {{(this.totalRes)}} Restaurantes</h2>
+   <br>
+</div>
